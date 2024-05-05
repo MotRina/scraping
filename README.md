@@ -1,6 +1,6 @@
-# scraping
-GASで使えるスクレイピング
+# scraping：GASで使えるスクレイピング
 
+## info
 ◯　Google App Script
 https://script.google.com/home
 
@@ -8,7 +8,7 @@ https://script.google.com/home
 1ReeQ6WO8kKNxoaA_O0XEQ589cIrRvEBA9qcWpNqdOP17i47u6N9M5Xh0
 
 
-### 使い方
+## how to use
 ◯　openById("ここにスプレッドシートのIDを入れる")
 
 ◯　getSheetByName("ここにはシート名を入れる")
