@@ -1,14 +1,11 @@
-// openById("ここにスプレッドシートのIDを入れる")
-const spreadsheet = SpreadsheetApp.openById("1BWHtmdvLTO0nNQmbjN1CVDSbnqQsfQY6Lx6-pzEyTpI")
-// getSheetByName("ここにはシート名を入れる")
-const sheet = spreadsheet.getSheetByName("シート1")
+
+const spreadsheet = SpreadsheetApp.openById("スプレッドシートのID")
+const sheet = spreadsheet.getSheetByName("シート名")
 function scrape(){
-    // スクレイピングしたいサイトのURLを入れる
-    let content = UrlFetchApp.fetch("https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers").getContentText()
+    let content = UrlFetchApp.fetch("スクレイピングしたいサイトのURL").getContentText()
     // Cheerioというライブラリを使ってHTMLを解析する
     let $ = Cheerio.load(content);
-    // クラス名やタグ名を指定して要素を取得する
-    let $title = $('strong');
+    let $title = $('クラス名やタグ名を指定して要素を取得');
     $title.each(function(index, element){
         sheet.getRange("A" + (index + 1)).setValue($(element).text());
     })
