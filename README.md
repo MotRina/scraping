@@ -16,3 +16,5 @@ https://script.google.com/home
 ◯　UrlFetchApp.fetch("スクレイピングしたいサイトのURLを入れる")
 
 ◯　let $title = $('クラス名やタグ名を指定して要素を取得する')
+
+クラス名を指定するときは、「.class p」のようにクラス名の前に.をつける
