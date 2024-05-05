@@ -13,5 +13,3 @@ function scrape(){
         sheet.getRange("A" + (index + 1)).setValue($(element).text());
     })
 }
-
-// CheerioライブラリのスクリプトIDは"1ReeQ6WO8kKNxoaA_O0XEQ589cIrRvEBA9qcWpNqdOP17i47u6N9M5Xh0"
